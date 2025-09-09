@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SWOT-analyysi</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="word-list" id="word-list">
+			<p id="KT0">Kovat Taidot:</p>
+			<div class="word" id="KT01" draggable="true">Tietokoneen käyttö</div>
+			<div class="word" id="KT02" draggable="true">Microsoft Office -ohjelmat</div>
+			<div class="word" id="KT03" draggable="true">Excel</div>
+			<div class="word" id="KT04" draggable="true">Word</div>
+			<div class="word" id="KT05" draggable="true">PowerPoint</div>
+			<!-- Lisää muita kovia taitoja tarvittaessa -->
+
+			<p id="PT0">Pehmeät Taidot:</p>
+			<div class="word" id="PT01" draggable="true">Kommunikointi</div>
+			<div class="word" id="PT02" draggable="true">Kuunteleminen</div>
+			<div class="word" id="PT03" draggable="true">Ryhmätyö</div>
+			<div class="word" id="PT04" draggable="true">Johtaminen</div>
+			<div class="word" id="PT05" draggable="true">Ajanhallinta</div>
+			<!-- Lisää muita pehmeitä taitoja tarvittaessa -->
+
+			<p id="TM0">Työ Motivaatio:</p>
+			<div class="word" id="TM01" draggable="true">Halukkuus oppia uusia taitoja</div>
+			<div class="word" id="TM02" draggable="true">Kiinnostus kehittyä ammatillisesti</div>
+			<div class="word" id="TM03" draggable="true">Motivaatio työskennellä tiimissä</div>
+			<div class="word" id="TM04" draggable="true">Halukkuus ottaa vastuuta</div>
+			<div class="word" id="TM05" draggable="true">Intohimo työtehtäviä kohtaan</div>
+			<!-- Lisää muita motivaatiotekijöitä tarvittaessa -->
+
+			<div id="UI0">
+				<p>Muut Taidot:</p>
+				<input id="Input"></input>
+				<button onclick=addUI()>Lisää</button>
+			</div>
+		</div>
+
+		<div id="swot" class="swot-columns">
+			<div id="strengths" class="swot" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p>Asiat joita haluan tehdä ja joita osaan hyvin</p>
+			</div>
+			<div id="weaknesses" class="swot" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p>Asiat joita haluan tehdä, mutta niissä on kehittämisen varaa</p>
+			</div>
+			<div id="opportunities" class="swot" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p>Asiat joita en halua tehdä vaikka osaan</p>
+			</div>
+			<div id="threats" class="swot" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p>Asiat joita en halua tehdä enkä osaa</p>
+			</div>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
