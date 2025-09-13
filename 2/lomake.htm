@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lomake</title>
+	<style>
+	</style>
+</head>
+<body>
+	<form action="lomake.htm" method="get">
+	<table>
+		<tr>
+			<td>Etunimi:</td>
+			<td><input name="enimi" id="input" placeholder="Etunimi"></td>
+		</tr>
+		<tr>
+			<td>Sukunimi:</td>
+			<td><input name="snimi" id="input" placeholder=""></td>
+		</tr>
+		<tr>
+			<td>Sähköpostiosoite:</td>
+			<td><input type="email" name="sposti" id="input"></td>
+		</tr>
+		<tr>
+			<td>Salasana:</td>
+			<td><input type="password" name="pwd" id="input"></td>
+		</tr>
+		<tr>
+			<td>Syntymäaika</td>
+			<td><input type="date" name="bd" id="input"></td>
+		</tr>
+		<tr>
+			<td>Ruokailut:</td>
+			<td>
+				<input type="checkbox" name="breakfast" id="input">
+				Aamiainen<br>
+				<input type="checkbox" name="lunch" id="input">
+				Lounas<br>
+				<input type="checkbox" name="dinner" id="input">
+				Päivällinen
+			</td>
+		</tr>
+		<tr>
+			<td>Sukupuoli:</td>
+			<td>
+				<input type="radio" name="sex" value="male">
+				Mies<br>
+				<input type="radio" name="sex" value="female">
+				Nainen<br>
+				<input type="radio" name="sex" value="other">
+				Muu
+			</td>
+		</tr>
+		<tr>
+			<td>Erityistoiveet:</td>
+			<td>
+				<textarea cols="32" rows="8" name="toiveet" id="input" placeholder="Kirjoittele tähän jotain"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>Valintasi:</td>
+			<td>
+				<select name="valinnat" id="input" multiple>
+					<option value="1">Vaihtoehto 1</option>
+					<option value="2">Vaihtoehto 2</option>
+					<option value="3">Vaihtoehto 3</option>
+					<option value="4">Vaihtoehto 4</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button type="submit">Lähetä</button>
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
