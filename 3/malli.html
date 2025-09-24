@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Kiinteäleveyksinen sivutaitto</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: small;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .wrap {
+      width: 960px;
+      margin: 0 auto;
+      background-color: #e4e4e4;
+    }
+
+    .header,
+    .footer {
+      background-color: #666;
+      color: #fff;
+    }
+
+    .header h1,
+    .footer p {
+      margin: 0;
+      padding: 10px;
+    }
+
+    .sidebar {
+      float: right;
+      width: 200px;
+      background-color: #999;
+      color: #000;
+      padding: 10px;
+    }
+
+    .maincontent {
+      margin: 0 220px 0 0;
+      padding: 10px;
+    }
+
+    .clearfloat {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <h1>2 column fixed</h1>
+    </div><!-- .header loppuu -->
+    <div class="sidebar">
+      <h3>Sidebar1 Content</h3>
+      <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+      </ul>
+      <p>
+        Donec eu mi sed turpis feugiat feugiat. Integer turpis arcu, pellentesque eget, cursus et, fermentum ut,
+        sapien.
+        Fusce metus mi, eleifend sollicitudin, molestie id, varius et, nibh. Donec nec libero.
+      </p>
+      <p>
+        Donec eu mi sed turpis feugiat feugiat. Integer turpis arcu, pellentesque eget, cursus et, fermentum ut,
+        sapien.
+        Fusce metus mi, eleifend sollicitudin, molestie id, varius et, nibh. Donec nec libero.
+      </p>
+      <p>
+        Donec eu mi sed turpis feugiat feugiat. Integer turpis arcu, pellentesque eget, cursus et, fermentum ut,
+        sapien.
+        Fusce metus mi, eleifend sollicitudin, molestie id, varius et, nibh. Donec nec libero.
+      </p>
+    </div><!-- .sidebar loppuu -->
+    <div class="maincontent">
+      <h1> Main Content </h1>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam, justo convallis luctus rutrum, erat
+        nulla fermentum diam, at nonummy quam ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo
+        porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis ligula. Phasellus tristique purus a augue
+        condimentum adipiscing. Aenean sagittis. Etiam leo pede, rhoncus venenatis, tristique in, vulputate at, odio.
+        Donec
+        et ipsum et sapien vehicula nonummy. Suspendisse potenti. Fusce varius urna id quam. Sed neque mi, varius eget,
+        tincidunt nec, suscipit id, libero. In eget purus. Vestibulum ut nisl. Donec eu mi sed turpis feugiat feugiat.
+        Integer turpis arcu, pellentesque eget, cursus et, fermentum ut, sapien. Fusce metus mi, eleifend sollicitudin,
+        molestie id, varius et, nibh. Donec nec libero.</p>
+      <h2>H2 level heading </h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam, justo convallis luctus rutrum, erat
+        nulla fermentum diam, at nonummy quam ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo
+        porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis ligula. Phasellus tristique purus a augue
+        condimentum adipiscing. Aenean sagittis. Etiam leo pede, rhoncus venenatis, tristique in, vulputate at, odio.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent aliquam, justo convallis luctus rutrum, erat
+        nulla fermentum diam, at nonummy quam ante ac quam. Maecenas urna purus, fermentum id, molestie in, commodo
+        porttitor, felis. Nam blandit quam ut lacus. Quisque ornare risus quis ligula. Phasellus tristique purus a augue
+        condimentum adipiscing. Aenean sagittis. Etiam leo pede, rhoncus venenatis, tristique in, vulputate at, odio.
+      </p>
+    </div><!-- .maincontent loppuu -->
+    <br class="clearfloat">
+    <div class="footer">
+      <p>Footer</p>
+    </div><!-- .footer loppuu -->
+  </div><!-- .wrap loppuu -->
+</body>
+
+</html>
